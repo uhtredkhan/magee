@@ -1,0 +1,356 @@
+/* Light theme (default) */
+:root {
+    --primary-color: #ff69b4; /* Hot Pink */
+    --secondary-color: #ffb6c1; /* Light Pink */
+    --accent-color: #ffc0cb; /* Pink */
+    --text-color: #4a4a4a; /* Dark Gray */
+    --background-color: #fff5f7; /* Light Pink Background */
+    --card-background: #ffffff;
+    --border-color: #ffd1dc; /* Light Pink Border */
+    --input-background: #ffffff;
+    --hover-color: #2980b9;
+    --nav-background: #2c3e50;
+    --nav-text: #ffffff;
+    --card-shadow: 0 8px 20px rgba(255, 105, 180, 0.15);
+    --hover-shadow: 0 12px 30px rgba(255, 105, 180, 0.25);
+    --text-muted: #888888;
+    --gradient-start: #ff69b4;
+    --gradient-end: #ffb6c1;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --primary-color: #ff69b4;
+    --secondary-color: #ffb6c1;
+    --accent-color: #ffc0cb;
+    --text-color: #ffffff;
+    --background-color: #1a1a1a;
+    --card-background: #2d2d2d;
+    --border-color: #ff69b4;
+    --input-background: #2d2d2d;
+    --hover-color: #2980b9;
+    --nav-background: #1a1a1a;
+    --nav-text: #ffffff;
+    --card-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+    --hover-shadow: 0 12px 30px rgba(255, 105, 180, 0.3);
+    --text-muted: #cccccc;
+}
+
+/* Theme transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme specific styles */
+[data-theme="dark"] {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] p {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .main-nav {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+[data-theme="dark"] .main-nav a {
+    color: var(--nav-text);
+}
+
+[data-theme="dark"] .project-card {
+    background-color: var(--card-background);
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .project-card h3 {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .project-card p {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, var(--nav-background), var(--secondary-color));
+    color: var(--nav-text);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group select,
+[data-theme="dark"] .form-group textarea {
+    background-color: var(--input-background);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-group label {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group select:focus,
+[data-theme="dark"] .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.15);
+}
+
+[data-theme="dark"] .skills-preview {
+    background-color: var(--card-background);
+}
+
+[data-theme="dark"] .skill-item {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .skill-item:hover {
+    background-color: var(--input-background);
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .skill-item h3 {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .skill-item p {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .skill-item i {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .skills-nav button {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .skills-nav button:hover {
+    background-color: var(--primary-color);
+    color: var(--nav-text);
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .submit-btn {
+    background-color: var(--primary-color);
+    color: var(--nav-text);
+}
+
+[data-theme="dark"] .submit-btn:hover {
+    background-color: var(--hover-color);
+}
+
+[data-theme="dark"] .social-links a {
+    color: var(--nav-text);
+}
+
+[data-theme="dark"] .social-links a:hover {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] footer {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--nav-text);
+}
+
+[data-theme="dark"] .about-column,
+[data-theme="dark"] .contact-info,
+[data-theme="dark"] .contact-form,
+[data-theme="dark"] .survey-form {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .gallery-item {
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .gallery-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+[data-theme="dark"] .gallery-overlay h3 {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .portfolio-section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .portfolio-section h1 {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .portfolio-gallery {
+    background-color: var(--background-color);
+}
+
+[data-theme="dark"] .gallery-item {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .gallery-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7));
+}
+
+[data-theme="dark"] .gallery-overlay h3,
+[data-theme="dark"] .gallery-overlay p {
+    color: var(--nav-text);
+}
+
+[data-theme="dark"] .gallery-item:hover .gallery-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.8));
+}
+
+[data-theme="dark"] .map-container h2 {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .map-wrapper {
+    border-color: var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .map-wrapper:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Print styles for dark mode */
+@media print {
+    [data-theme="dark"] {
+        --text-color: #000000;
+        --background-color: #ffffff;
+        --card-background: #ffffff;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Selection Color */
+::selection {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Focus Outline */
+:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Button Styles */
+.btn {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
+}
+
+/* Card Styles */
+.card {
+    background: var(--card-background);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+/* Navigation Styles */
+.main-nav {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Form Styles */
+input, textarea, select {
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.15);
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+#theme-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
+} 

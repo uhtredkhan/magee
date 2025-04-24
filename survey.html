@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take our survey to help us improve our services">
+    <meta name="keywords" content="survey, feedback, form, questionnaire">
+    <meta name="author" content="Your Name">
+    <title>My Portfolio | Survey</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html" class="active">Survey</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="survey-section">
+            <h1>Customer Feedback Survey</h1>
+            <div class="survey-form">
+                <img src="images/Z0FjRmdccw.jpg" alt="Survey Image" class="survey-image">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>How did you find our website?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="source" value="search" required>
+                                Search Engine
+                            </label>
+                            <label>
+                                <input type="radio" name="source" value="social">
+                                Social Media
+                            </label>
+                            <label>
+                                <input type="radio" name="source" value="friend">
+                                Friend's Recommendation
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Survey</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mage. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    <script src="js/main.js"></script>
+</body>
+</html> 
